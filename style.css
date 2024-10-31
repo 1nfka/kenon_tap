@@ -1,0 +1,207 @@
+body{
+    background: url(orig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 430px;
+    max-height:932px;
+    margin: 0; /* Убирает отступы по умолчанию */
+    padding: 0; /* Убирает внутренние отступы */
+    overflow: hidden;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+ }
+   
+footer{
+    width: 100%;
+    height: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.e1,.e2,.e3,.e4{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    border-radius: 20% 20% 0 0;
+}
+#youtube{
+    background-color: rgb(115, 37, 37);
+}
+
+#twitch{
+    background-color: rgb(89, 16, 85);
+   
+}
+
+#telega{
+    background-color: rgb(0, 128, 175);
+
+}
+
+#shop{
+    background-color: rgb(215, 182, 37);
+    
+    
+}
+.main{
+    max-width: 932px;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.scorecss{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;justify-content: center;
+    color:black;
+    font-size: 40px;
+    font-weight:600;
+    font-style: italic;
+}
+.header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+@keyframes colorChange2 {
+    100% { background-color: rgb(0, 208, 255); }
+  }
+  @keyframes colorChange1 {
+    100% { background-color: rgb(255, 234, 0); }
+  }
+  @keyframes colorChange3 {
+    100% { background-color: rgb(208, 0, 255); }
+  }
+  @keyframes colorChange4 {
+    100% { background-color: rgb(255, 0, 0); }
+  }
+  .modalcss{
+    border: 6px rgb(148, 148, 148) solid;
+    border-radius: 2% 2% 0 0;
+    position: fixed;
+    top: 70%; /* Разместить в верхней части экрана на половине высоты */
+    left: 50%; /* Разместить в левой части экрана на половине ширины */
+    transform: translate(-50%, -50%); /* Центрировать элемент по центру экрана */
+    width: 90%; /* Ширина диалогового окна */
+    height: 60%;
+    background:url(7HY_1y2LVTsfsJR85yNLY6wUkkY6oZiorvwqZJom7BQ9pqgsUHyopHMhc5TmIgc8bHm_UeWpOZc7uA5EAuSwhzmn6cX6GpU6WqJW7-GgT2b_E8KDaifZqXi_PmrAbvAccznxM802NiJmN6cUtmTX7zY3-Qcm9uoV6XSIDtI9pxktvzUeLZhUf9Kv2PdiLE6kutZe.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 999; /* Показывать выше других элементов */
+    outline: none;
+    padding: 0;
+}
+dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.694);
+}
+.up1,.up2,.up3{
+    display: flex;
+    align-items: center;
+    background-color: rgba(29, 29, 29, 0.878);
+    border: 2px white solid;
+    width: 95%;
+    height: 70px;
+    margin-top: 2%; 
+    margin-bottom: 1%;
+    border-radius: 1%;
+}
+.name1,.name2,.name3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 171px;
+
+}
+h3{
+color: white;
+}
+
+dialog {
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(-50% -50%);
+    }
+}
+.sky,.lir,.erd{
+    background-color: rgb(237, 135, 76);
+    width: 25%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    border: 1px rgb(255, 208, 0) solid;
+    cursor: pointer; /* Добавляем указатель при наведении */
+    transition: transform 0.3s;
+}
+.erd:active,.sky:active,.lir:active {
+    background-color: rgb(159, 159, 159); /* Изменяем цвет фона при нажатии */
+    transition: background-color 0.1s; /* Добавляем плавное переходное свойство */
+    transform: scale(0.75);
+}
+p{
+    color: white;
+    font-weight: bold;
+}
+.photo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.health-bar {
+    width: 350px; /* задайте ширину Health Bar по вашему выбору */
+    background-color: rgba(0, 0, 0, 0.519);
+    
+    border-radius: 20px;
+  }
+  
+  .health {
+    background-color: green;
+    width: 100%; /* начальная ширина Health Bar */
+    height: 20px; /* высота Health Bar */
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+ 
+  
+img {
+    transition: transform 0.3s;
+}
+
+img.clicked {
+    transform: scale(0.8);
+}
