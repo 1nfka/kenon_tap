@@ -5,6 +5,7 @@ body{
     background-position: center;
     max-width: 600px;
     max-height:2000px;
+    min-height:2000[x;
     margin: 0; /* Убирает отступы по умолчанию */
     padding: 0; /* Убирает внутренние отступы */
     overflow: hidden;
